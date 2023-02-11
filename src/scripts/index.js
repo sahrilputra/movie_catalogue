@@ -1,6 +1,6 @@
 import 'regenerator-runtime';
-import '../styles/style.css';
-import '../styles/responsive.css';
+import '../style/style.css';
+import '../style/responsive.css';
 import App from './views/app';
 
 // eslint-disable-next-line no-unused-vars
