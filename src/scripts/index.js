@@ -2,6 +2,7 @@ import 'regenerator-runtime';
 import '../style/style.css';
 import '../style/responsive.css';
 import App from './views/app';
+import swRegister from './utils/sw-register';
 
 // eslint-disable-next-line no-unused-vars
 const app = new App({
@@ -16,4 +17,5 @@ window.addEventListener('hashchange', () => {
 
 window.addEventListener('load', () => {
   app.renderPage();
+  swRegister();
 });
