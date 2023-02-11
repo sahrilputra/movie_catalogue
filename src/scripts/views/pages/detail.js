@@ -11,7 +11,7 @@ const Detail = {
 
   async afterRender() {
     // setelah render();
-    const url = UrlParser.parseActiveUrlWithCombiner();
+    const url = UrlParser.parseActiveUrlWithoutCombiner();
     const movie = await TheMovieDbSource.detailMovie(url.id);
     const movieContainer = document.querySelector('#movie');
     movieContainer.innerHTML = createMovieDetailTemplate(movie);
